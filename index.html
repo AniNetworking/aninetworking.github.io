@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniNet - New Tab</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/j&c/style.css">
+</head>
+<body>
+
+    <div class="logo">
+        <a href="">
+            <img src="resources/images/aninet-logo.png" alt="AniNet Logo" width="550">
+        </a>
+    </div>
+
+    <div class="search-container">
+        <input autocomplete="off" id='anime-search' type="text" placeholder="Search for anime..."oninput="getAnimeSuggestions()" onkeydown="checkEnterKey(event)">
+        <button onclick="searchAnime()">
+            <i class='fa-solid fa-magnifying-glass'></i>
+        </button>
+    </div>
+    <ul id="suggestions-list" class="suggestions"></ul>
+    <div class="links">
+        <a href="results.html?topRated=true" class="link">Top 25</a>
+        <a href="genrelist.html" class="link">Genres</a>
+        <a href="https://spiedernetworking.github.io/contacts.html" class="link">Contacts</a>
+        <a href="https://spiedernetworking.github.io/home.html" class="link">Other Projects</a>
+    </div>
+    <p style="bottom: 0; position: fixed;">Powered by <a href="https://jikan.moe/">Jikan API</a></p>
+    <script src="resources/j&c/homesearchbar.js"></script>
+</body>
+</html>
+<script src="resources/j&c/cookies.js"></script>

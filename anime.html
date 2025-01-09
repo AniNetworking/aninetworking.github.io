@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniNet - Selected Item</title>
+    <link rel="stylesheet" href="resources/j&c/info.css">
+    <link rel="icon" type="image/x-icon" href="resources/images/aninet-favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header"><a href="index.html">
+        <img src="resources/images/aninet-logo.png" alt="AniNet Logo" class="logo"></a>
+        <div class="search-container">
+            <input autocomplete="off" id='anime-search' type="text" placeholder="Search for anime..."oninput="getAnimeSuggestions()" onkeydown="checkEnterKey(event)">
+            <button onclick="searchAnime()">
+                <i class='fa-solid fa-magnifying-glass'></i>
+                <script src="resources/j&c/homesearchbar.js"></script>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        
+    </div>
+    <script src='resources/j&c/homesearchbar.js'></script>
+    <script src='resources/j&c/info.js'></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.anime-thumbnail {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.anime-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.anime-thumbnail h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #555;
+}
+
+.anime-details {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.6;
+}
+
+.anime-details p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.anime-details p strong {
+    font-weight: bold;
+    color: #444;
+}
+
+@media (min-width: 600px) {
+    .anime-details {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .anime-details p {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .anime-thumbnail h2 {
+        font-size: 28px;
+    }
+
+    .anime-details p {
+        font-size: 18px;
+    }
+}
+
+.search-container {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 24px;
+    padding: 10px 15px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 30px;
+    margin-right: 20px;
+}
+.search-bar {
+    flex-grow: 1;
+}
+.search-bar input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.search-bar input[type="submit"] {
+    display: none;
+}

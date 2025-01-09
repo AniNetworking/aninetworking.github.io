@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AniNet - Search Result</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 30px;
+            margin-right: 20px;
+        }
+        .search-bar {
+            flex-grow: 1;
+        }
+        .search-bar input[type="text"] {
+            width: 98%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .search-bar input[type="submit"] {
+            display: none;
+        }
+        .results {
+            padding: 20px;
+        }
+        .result-item {
+            margin-bottom: 20px;
+        }
+        .result-item a {
+            font-size: 18px;
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        .result-item a:hover {
+            text-decoration: underline;
+        }
+        .result-item .url {
+            font-size: 14px;
+            color: #006621;
+        }
+        .result-item .snippet {
+            font-size: 14px;
+            color: #545454;
+        }
+        
+        .search-container {
+            width: 90%;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #d9d9d9;
+            border-radius: 24px;
+            padding: 10px 15px;
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><a href="index.html">
+        <img src="resources/images/aninet-logo.png" alt="AniNet Logo" class="logo"></a>
+        <div class="search-container">
+            <input autocomplete="off" id='anime-search' type="text" placeholder="Search for anime..."oninput="getAnimeSuggestions()" onkeydown="checkEnterKey(event)">
+            <button onclick="searchAnime()">
+                <i class='fa-solid fa-magnifying-glass'></i>
+                <script src="resources/j&c/homesearchbar.js"></script>
+            </button>
+        </div>
+    </div>
+    <div class="results">
+    </div>
+    <script src="resources/j&c/search.js"></script>
+</body>
+</html>

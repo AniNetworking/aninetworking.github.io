@@ -1,0 +1,89 @@
+
+  /* Container to hold the genre list */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  /* Style for each genre item */
+  .genre-item {
+    background-color: #228ad4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 20px;
+    max-width: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* Add hover effect for genre items */
+  .genre-item:hover {
+    background-color: #008CBA;
+    color: #fff;
+    transform: scale(1.05);
+  }
+
+  /* Style for the anchor (link) inside the genre item */
+  .genre-item a {
+    color: inherit;
+    text-decoration: none;
+    display: block; /* Makes the entire div clickable */
+  }
+
+  /* Optional: Add a little margin between genre items */
+  .genre-item + .genre-item {
+    margin-top: 10px;
+  }
+  .search-container {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 24px;
+    padding: 10px 15px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 30px;
+    margin-right: 20px;
+}
+.search-bar {
+    flex-grow: 1;
+}
+.search-bar input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.search-bar input[type="submit"] {
+    display: none;
+}
